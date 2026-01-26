@@ -1,0 +1,95 @@
+/* =========================
+   HOME – Layout principal
+   ========================= */
+
+/* ===== BODY BASE ===== */
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-primary);
+  overflow-x: hidden;
+}
+
+/* ===== HERO SECTION ===== */
+
+.hero {
+  min-height: 100vh;
+  padding: var(--space-xl) var(--space-md);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(255, 255, 255, 0.04),
+      transparent 60%
+    );
+}
+
+.hero__content {
+  max-width: 640px;
+}
+
+.hero__title {
+  font-family: var(--font-secondary);
+  font-size: clamp(2.2rem, 6vw, var(--font-size-xxl));
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.02em;
+}
+
+.hero__subtitle {
+  display: block;
+  margin-bottom: var(--space-xs);
+
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+
+  color: var(--color-accent-primary);
+}
+
+.hero__description {
+  margin-top: var(--space-sm);
+
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+}
+
+/* ===== MAIN CONTENT ===== */
+
+main {
+  padding-bottom: var(--space-2xl);
+}
+
+/* ===== COCKTAILS SECTION ===== */
+
+.cocktails {
+  padding: var(--space-xl) var(--space-md);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+/* ===== FEATURED COCKTAIL ===== */
+
+.cocktail-card--featured {
+  margin-top: var(--space-xl);
+}
+
+/* ===== RESPONSIVE (desktop ligero) ===== */
+
+@media (min-width: 768px) {
+  .hero {
+    padding: var(--space-2xl);
+  }
+
+  .cocktails {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}

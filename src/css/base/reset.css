@@ -1,0 +1,90 @@
+/* =========================
+   RESET CSS – Base del proyecto
+   ========================= */
+
+/* 1. Box sizing consistente */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Ajustes base del documento */
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+/* 3. Body base */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Eliminar estilos por defecto en listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 5. Enlaces limpios */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 6. Imágenes y media responsivos */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Formularios heredando fuente */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Botones sin estilos raros */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 9. Evitar overflow inesperado */
+body {
+  overflow-x: hidden;
+}
+
+/* 10. Headings sin tamaños forzados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+/* 11. Párrafos consistentes */
+p {
+  max-width: 75ch;
+}
+
+/* 12. Mejor accesibilidad para focus */
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
