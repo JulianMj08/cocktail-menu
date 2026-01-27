@@ -69,10 +69,60 @@ main {
 
 .cocktails {
   padding: var(--space-xl) var(--space-md);
+  display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 8px;
+}
 
+.card-grid-reverse {
+    grid-column: span 2 / span 2;
+    /* border: aqua 3px solid; */
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: var(--color-accent-primary) 1px solid;
+}
+
+/* .prueba-border {
+    border: red 3px solid;
+} */
+
+.cocktail-card {
+  grid-column: span 2 / span 2;
+    /* border: aqua 3px solid; */
+    display: flex;
+    flex-direction: row;
+    border-bottom: var(--color-accent-primary) 1px solid;
+}
+
+.card-space {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2xl);
+  justify-content: space-evenly;
+}
+
+.card-space-reverse {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.cocktail-card__title {
+  font-size: var(--font-size-xxl);
+  color: var(--color-accent-primary);
+}
+
+.cocktail-card__ingredients {
+  font-size: var(--font-size-lg);
+}
+
+.cocktail-card__description {
+  text-align-last: justify;
+}
+
+.cocktail-card__price {
+  font-size: var(--font-size-xl);
 }
 
 /* ===== FEATURED COCKTAIL ===== */
