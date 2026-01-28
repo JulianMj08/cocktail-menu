@@ -36,7 +36,7 @@ body {
 
 .hero__title {
   font-family: var(--font-secondary);
-  font-size: clamp(2.2rem, 6vw, var(--font-size-xxl));
+  font-size: clamp(2.2rem, 6vw, var(--font-size-xxxl));
   font-weight: var(--font-weight-bold);
   letter-spacing: 0.02em;
 }
@@ -45,7 +45,7 @@ body {
   display: block;
   margin-bottom: var(--space-xs);
 
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xxl);
   letter-spacing: 0.3em;
   text-transform: uppercase;
 
@@ -114,21 +114,36 @@ main {
 }
 
 .cocktail-card__ingredients {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
 }
 
 .cocktail-card__description {
   text-align-last: justify;
+  font-size: var(--font-size-sm);
 }
 
 .cocktail-card__price {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
 }
 
 /* ===== FEATURED COCKTAIL ===== */
 
 .cocktail-card--featured {
   margin-top: var(--space-xl);
+}
+
+/* ===== CARD ONE ER ===== */
+.card-one {
+  padding-bottom: 20px
+}
+
+.card-one__tittle, .card-one__ingredients, .card-one__description {
+  padding-bottom: 26px
+}
+
+.cocktail-card__image {
+  display: flex;
+  align-items: center;
 }
 
 /* ===== RESPONSIVE (desktop ligero) ===== */
