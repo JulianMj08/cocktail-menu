@@ -44,7 +44,7 @@ body {
 .hero__subtitle {
   display: block;
   margin-bottom: var(--space-xs);
-
+  font-family: var(--font-secondary);
   font-size: var(--font-size-xxl);
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -87,6 +87,19 @@ main {
     border: red 3px solid;
 } */
 
+
+/* .font-playfair {
+  font-family: 'Playfair Display', serif;
+  
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+  
+} */
+
+
+
 .cocktail-card {
   grid-column: span 2 / span 2;
     /* border: aqua 3px solid; */
@@ -109,6 +122,7 @@ main {
 }
 
 .cocktail-card__title {
+  font-family: var(--font-secondary);
   font-size: var(--font-size-xxl);
   color: var(--color-accent-primary);
 }
@@ -120,10 +134,13 @@ main {
 .cocktail-card__description {
   text-align-last: justify;
   font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
 }
 
 .cocktail-card__price {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
 }
 
 /* ===== FEATURED COCKTAIL ===== */

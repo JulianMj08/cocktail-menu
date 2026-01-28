@@ -30,7 +30,9 @@
      TIPOGRAFÍA
      ===================== */
 
-  --font-primary: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  /* --font-primary: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, sans-serif; */
+  /* --font-secondary: 'Playfair Display', serif; */
+  --font-primary: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   --font-secondary: 'Playfair Display', serif;
 
   /* Tamaños */
@@ -45,6 +47,7 @@
   /* Pesos */
   --font-weight-regular: 400;
   --font-weight-medium: 500;
+  --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
   /* =====================

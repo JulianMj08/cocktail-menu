@@ -6,6 +6,11 @@
   <link rel="stylesheet" href="./css/main.css">
 
 
+  <!-- Google Fonts: Inter & Playfair Display -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
   <title>Signature Cocktails</title>
 
   <!-- SEO básico -->
@@ -46,7 +51,7 @@
 
       <!-- Cocktail 1 -->
       <article class="card-grid-reverse cocktail-card--featured card-one">
-        <div class="cocktail-card__image prueba-border">
+        <div class="cocktail-card__image">
           <img
             src="../public/images/margarita-removebg-preview.png"
             alt="Cocktail Sex on the beach"
@@ -56,10 +61,10 @@
 
         <div class="cocktail-card__info card-space-reverse ">
           <h2 class="cocktail-card__title card-one__tittle">Margarita</h2>
-          <p class="cocktail-card__ingredients card-one__ingredients">
+          <p class="cocktail-card__ingredients card-one__ingredients font-inter">
             Ingredientes: Tequila · Triple Sec · Lima · Sal
           </p>
-          <p class="cocktail-card__description card-one__description">Descripcion Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsa quibusdam</p>
+          <p class="cocktail-card__description card-one__description">Descripcion Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsa quibusdam sint perspiciatis animi sequi minus totam sunt repellat sapiente?</p>
           <p class="cocktail-card__price">€8.00</p>
         </div>
       </article>
@@ -130,13 +135,19 @@
   <!-- ===================== -->
   <!-- FOOTER -->
   <!-- ===================== -->
-  <footer class="footer">
-    <p class="footer__text">
-      Disfruta con responsabilidad
+<footer class="footer">
+  <div class="footer__content">
+
+    <p class="footer__message">
+      Disfruta cada cóctel con calma. El equilibrio perfecto entre sabor, aroma y presentación.
     </p>
 
-    <span class="footer__icon" aria-hidden="true">🍸</span>
-  </footer>
+    <p class="footer__note">
+      Consumo responsable · Solo para mayores de edad
+    </p>
+
+  </div>
+</footer>
 
   <!-- JS principal -->
   <script src="./js/main.js"></script>
