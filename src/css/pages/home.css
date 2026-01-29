@@ -87,19 +87,6 @@ main {
     border: red 3px solid;
 } */
 
-
-/* .font-playfair {
-  font-family: 'Playfair Display', serif;
-  
-}
-
-.font-inter {
-  font-family: 'Inter', sans-serif;
-  
-} */
-
-
-
 .cocktail-card {
   grid-column: span 2 / span 2;
     /* border: aqua 3px solid; */
