@@ -32,6 +32,16 @@ body {
 
 .hero__content {
   max-width: 640px;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: heroFadeIn 1s ease-out forwards;
+}
+
+@keyframes heroFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero__title {
@@ -81,6 +91,14 @@ main {
     display: flex;
     flex-direction: row-reverse;
     border-bottom: var(--color-accent-primary) 1px solid;
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card-grid-reverse.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* .prueba-border {
@@ -93,7 +111,16 @@ main {
     display: flex;
     flex-direction: row;
     border-bottom: var(--color-accent-primary) 1px solid;
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
+
+.cocktail-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .card-space {
   display: flex;
@@ -146,9 +173,117 @@ main {
 }
 
 .cocktail-card__image {
+  /* position: relative; para rayo de luz atras*/ 
   display: flex;
   align-items: center;
 }
+
+/* Para rayo de luz atras */
+/* .cocktail-card__image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle,
+    rgba(255, 215, 0, 0.08),
+    transparent 70%
+  );
+  z-index: -1;
+} */
+
+/* .cocktail-card__image img {
+  filter: drop-shadow(0 20px 30px rgba(213, 183, 183, 0.6));
+  transition: transform 0.4s ease;
+} */
+
+/* .cocktail-card__image img {
+  
+  transform: translateY(0);
+  filter: drop-shadow(0 30px 40px rgba(177, 213, 185, 0.85));
+  transition: transform 0.4s ease, filter 0.4s ease;
+} */
+
+@media (hover: hover) {
+  .cocktail-card:hover .cocktail-card__image img {
+    transform: translateY(-6px) scale(1.02);
+  }
+}
+
+@media (hover: hover) {
+  .card-grid-reverse:hover .cocktail-card__image img {
+    transform: translateY(-6px) scale(1.02);
+  }
+}
+
+/* .cocktail-card__title {
+  letter-spacing: 0.01em;
+  transition: letter-spacing 0.8s ease;
+}
+
+.cocktail-card.is-visible .cocktail-card__title,
+.card-grid-reverse.is-visible .cocktail-card__title {
+  letter-spacing: 0.04em;
+} */
+
+/* .cocktail-card:hover .cocktail-card__title {
+  letter-spacing: 0.04em;
+} */
+
+
+/* ANIMACION DEL MARGIN-BOTTOM DE cocktail-card */
+
+.cocktail-card,
+.card-grid-reverse {
+  position: relative;
+  border-bottom: none;
+}
+
+
+.cocktail-card::after,
+.card-grid-reverse::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-accent-primary),
+    rgba(255, 255, 255, 0.6),
+    var(--color-accent-primary),
+    transparent
+  );
+
+  background-size: 200% 100%;
+  opacity: 0.4;
+}
+
+.cocktail-card.is-visible::after,
+.card-grid-reverse.is-visible::after {
+  animation: shimmerLine 1.6s ease-out forwards;
+}
+
+@keyframes shimmerLine {
+  from {
+    background-position: 200% 0;
+    opacity: 0;
+  }
+  to {
+    background-position: 0% 0;
+    opacity: 0.6;
+  }
+}
+
+
+
+
+
+
+
 
 /* ===== RESPONSIVE (desktop ligero) ===== */
 
