@@ -145,6 +145,18 @@ main {
   font-size: var(--font-size-md);
 }
 
+.cocktail-card__ingredients span {
+  display: block;          
+  font-style: italic;      
+  margin-top: 4px;         
+  font-size: var(--font-size-sm);        
+  opacity: 0.8;            
+}
+
+.set-marg {
+  margin-left: 28px;
+}
+
 .cocktail-card__description {
   text-align-last: justify;
   font-size: var(--font-size-sm);
