@@ -208,8 +208,8 @@ main {
 } */
 
  .cocktail-card__image img {
-  /* filter: drop-shadow(0 20px 30px rgba(213, 183, 183, 0.6));
-  transition: transform 0.4s ease; */
+  filter: drop-shadow(0 3px 3px rgba(250, 249, 249, 0.6));
+  transition: transform 0.2s ease;
   /* width: 220px;      /* prueba 220–280px */
   /* max-width: 100%;
   height: auto; */
@@ -226,7 +226,7 @@ main {
   transition: transform 0.4s ease, filter 0.4s ease;
 } */
 
-@media (hover: hover) {
+/* @media (hover: hover) {
   .cocktail-card:hover .cocktail-card__image img {
     transform: translateY(-6px) scale(1.02);
   }
@@ -236,7 +236,7 @@ main {
   .card-grid-reverse:hover .cocktail-card__image img {
     transform: translateY(-6px) scale(1.02);
   }
-}
+} */
 
 /* .cocktail-card__title {
   letter-spacing: 0.01em;
