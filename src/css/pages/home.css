@@ -186,8 +186,12 @@ main {
 
 .cocktail-card__image {
   /* position: relative; para rayo de luz atras*/ 
+  width: 500px;
+  /* height: 500px; */
+  overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /* Para rayo de luz atras */
@@ -206,9 +210,13 @@ main {
  .cocktail-card__image img {
   /* filter: drop-shadow(0 20px 30px rgba(213, 183, 183, 0.6));
   transition: transform 0.4s ease; */
-   width: 850px;      /* prueba 220–280px */
+  /* width: 220px;      /* prueba 220–280px */
   /* max-width: 100%;
   height: auto; */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1.33); /* 👈 aquí “crece” la bebida */
 } 
 
 /* .cocktail-card__image img {
